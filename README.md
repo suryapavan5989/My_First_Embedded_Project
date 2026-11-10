@@ -12,15 +12,15 @@ This project implements a software-based BMS simulation using the C programming 
 
 The project is developed as an introductory Embedded Systems application, with a focus on battery monitoring, fault detection, control logic, and diagnostic reporting.
 
-| Project Detail|                                                   | Description |
+| Project Detail| Description |
 |---|---|
-| Project Name |                                                    | Mini Battery Management System |
-| Project Type |                                                    |  Embedded Systems Software Simulation |
-| Programming Language |                                            |C |
-| Battery Configuration |                                           | 3-Cell Series Pack |
-| Compiler |                                                        |GCC |
-| Development Environment|                                          | MSYS2 UCRT64 |
-| Platform |                                                        | Windows PC Simulation |
+| Project Name | Mini Battery Management System |
+| Project Type |  Embedded Systems Software Simulation |
+| Programming Language |C |
+| Battery Configuration | 3-Cell Series Pack |
+| Compiler|GCC |
+| Development Environment| MSYS2 UCRT64 |
+| Platform | Windows PC Simulation |
 
 ---
 
@@ -63,21 +63,21 @@ The BMS follows a sequential monitoring and control process:
 
 The simulation uses the following assumed thresholds for a conventional lithium-ion cell:
 
-| Parameter |                                                | Detection Condition |
+| Parameter | Detection Condition |
 |---|---|
-| Cell Overvoltage |                                            Cell voltage > 4.2 V |
-| Cell Undervoltage |                                           Cell voltage < 3.0 V |
-| Overtemperature |                                             Temperature > 60°C |
-| Cell Imbalance |                                              Maximum cell voltage − Minimum cell voltage > 0.20 V |
+| Cell Overvoltage | Cell voltage > 4.2 V |
+| Cell Undervoltage |Cell voltage < 3.0 V |
+| Overtemperature |Temperature > 60°C |
+| Cell Imbalance |Maximum cell voltage − Minimum cell voltage > 0.20 V |
 
 ### Hysteresis Recovery Thresholds
 
-| Parameter |                                                | Recovery Condition |
+| Parameter | Recovery Condition |
 |---|---|
-| Cell Overvoltage                                           | Cell voltage ≤ 4.10 V |
-| Cell Undervoltage                                          |Cell voltage ≥ 3.10 V |
-| Overtemperature |                                          | Temperature ≤ 55°C |
-| Cell Imbalance |                                           | Voltage difference ≤ 0.15 V |
+| Cell Overvoltage | Cell voltage ≤ 4.10 V |
+| Cell Undervoltage|Cell voltage ≥ 3.10 V |
+| Overtemperature | Temperature ≤ 55°C |
+| Cell Imbalance | Voltage difference ≤ 0.15 V |
 
 **Note:** These values are educational simulation assumptions, not universal battery protection limits. Actual thresholds must be selected according to the specific battery cell manufacturer's datasheet.
 
